@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1037e6 0%, #d0ccd3 100%);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.business-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+}
+.profile-picture img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    border: 3px solid #1037e6;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.bio {
+    color: #222;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.interests-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;          
+    flex-wrap: wrap;   
+    margin-top: 20px;
+    margin-bottom: 25px; 
+}
+
+.interest-tag {
+    background-color: #eef2ff; 
+    color: #3b82f6;             
+    padding: 6px 14px;           
+    border-radius: 20px;        
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+}
+}
+
+
+a {
+    display: inline-block;
+    background: #1037e6;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background: #0a24a5;
+    transform: scale(1.05);
+}
+.business-card a {
+    display: inline-block;
+    background-color: #2563eb;  
+    color: white !important;      
+    text-decoration: none;        
+    padding: 12px 35px;            
+    border-radius: 25px;           
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+.business-card a:hover {
+    background-color: #1d4ed8;    
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
