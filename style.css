@@ -27,6 +27,7 @@ body {
 .business-card:hover {
     transform: translateY(-5px);
 }
+
 .profile-picture img {
     width: 130px;
     height: 130px;
@@ -74,42 +75,53 @@ h1 {
     font-weight: 600;
     display: inline-block;
     white-space: nowrap;
-}
-}
+} /* ✅ Stray extra bracket fixed here */
 
 
-a {
-    display: inline-block;
-    background: #1037e6;
-    color: white;
-    text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
-}
-
-a:hover {
-    background: #0a24a5;
-    transform: scale(1.05);
-}
-.business-card a {
-    display: inline-block;
-    background-color: #2563eb;  
-    color: white !important;      
-    text-decoration: none;        
-    padding: 12px 35px;            
-    border-radius: 25px;           
-    font-weight: bold;
-    font-size: 16px;
+/* ACTION BUTTONS CONTAINER */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     margin-top: 15px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* PRIMARY & SECONDARY BUTTON STYLES */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-family: inherit;
+}
+
+/* CONTACT ME BUTTON */
+.btn-primary {
+    background-color: #2563eb;
+    color: white !important;
     box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
 }
 
-.business-card a:hover {
-    background-color: #1d4ed8;    
-    transform: translateY(-2px); 
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* SAVE CONTACT BUTTON */
+.btn-secondary {
+    background-color: #eef2ff;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.btn-secondary:hover {
+    background-color: #dbeafe;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.1);
 }
